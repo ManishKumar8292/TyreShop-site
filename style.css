@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+.nav-link {
+  font-size: 1rem !important;
+}
+
+.animated-hover {
+  position: relative;
+}
+.animated-hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  border-radius: 5px;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: currentcolor;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+.animated-hover:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.dropdown-nav:hover > .dropdown-menu-nav {
+  display: block;
+}
+.userProfile {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.review-description {
+  font-size: 0.85rem;
+}
+.details {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+.card:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.brand-image {
+  aspect-ratio: 3/1;
+}
+.dropdown-btn {
+  min-width: 170px;
+  width: 100%;
+}
+.filterInput {
+  max-width: 160px;
+  width: 100%;
+}
+.drop-down {
+  height: 142px;
+  overflow-y: scroll;
+}
+.drop-down::-webkit-scrollbar {
+  width: 5px;
+}
+
+.card-img {
+  width: 180px !important;
+  bottom: -3px;
+  right: 0;
+  transform: translateX(20%);
+  max-width: 100%;
+}
+.amazer-heading {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+.review-text {
+  font-size: 0.8rem;
+}
+.price {
+  font-size: 1.5rem;
+}
+.offer {
+  font-size: 0.8rem;
+}
+.margin-bottom {
+  margin-bottom: 0.5rem;
+}
+input[type="text"]:focus-visible {
+  outline: none;
+}
+.link-color {
+  color: grey;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.link-color:hover {
+  color: rgb(86, 85, 85);
+}
